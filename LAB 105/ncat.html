@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>        
+    </head>
+    <body class="bg-light">
+        <div class="container">
+            <div class="mt-3 mb-4">
+                <h4 class="text-uppercase text-dark"><i class="far fa-user"></i> personal information</h4>
+            </div>
+            <div class="welcome-message bg-warning p-3 mb-2">
+                <h6 class="font-weight-bolder text-dark">NCAT Examinee Application Form</h6>
+                <small class="text-success">Welcome to NVSU Online CAT Application! We are very glad to know you are interested in participating in our program and achieving all of your dreams. Please fill out the form carefully for registration. Make sure the information you provide is complete and accurate. If you have any question/issue, do not hesitate to reach us at info@nvsu.edu.ph.</small>
+            </div>
+            <form action="">
+                <div class="form-group row pt-3">
+                    <div class="col-7 row">
+                        <label for="first-time" class="col-6">
+                            <small class="font-weight-bold">Is this your first time to take the NVSU College Admission Test?<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="offset-1 col custom-select" name="first-time" id="first-time" required>
+                            <option>Select answer</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-5 row">
+                        <label for="if-no-where" class="col-5">
+                            <small class="font-weight-bold">If NO, where?</small>
+                        </label>
+                        <select class="offset-1 col custom-select" name="if-no-where" id="if-no-where">
+                            <option>Select answer</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                </div>
+                <fieldset disabled>
+                    <div class="form-group row py-1">
+                        <div class="col-4">
+                            <label for="first-name">
+                                <small class="font-weight-bold">First Name</small>
+                            </label>
+                            <input class="form-control" type="text" name="first-name" id="first-name" value="BILLY">
+                        </div>
+                        <div class="col-4">
+                            <label for="middle-name">
+                                <small class="font-weight-bold">Middle Name</small>
+                            </label>
+                            <input class="form-control" type="text" name="middle-name" id="middle-name" value="Garcia">
+                        </div>
+                        <div class="col-4">
+                            <label for="last-name">
+                                <small class="font-weight-bold">Last Name</small>
+                            </label>
+                            <input class="form-control" type="text" name="last-name" id="last-name" value="PERDIDO ">
+                        </div>
+                    </div>
+                </fieldset>
+                <h6 class="text-danger font-weight-bolder py-1"><i class="fas fa-home"></i> Residential Address</h6>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="house-no">
+                            <small class="font-weight-bold">House No.</small>
+                        </label>
+                        <input class="form-control" type="text" name="house-no" id="house-no" placeholder="House No.">
+                    </div>
+                    <div class="col-6">
+                        <label for="street-name">
+                            <small class="font-weight-bold">Street Name</small>
+                        </label>
+                        <input class="form-control" type="text" name="street-name" id="street-name" placeholder="Name of Street">
+                    </div>
+                    <div class="col-4">
+                        <label for="purok-no">
+                            <small class="font-weight-bold">Purok or Block No.</small>
+                        </label>
+                        <input class="form-control" type="text" name="purok-no" id="purok-no" placeholder="Purok No.">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label for="province">
+                            <small class="font-weight-bold">Province<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="province" id="province" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="municipality-town-city">
+                            <small class="font-weight-bold">Municipality/Town/City<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="municipality-town-city" id="municipality-town-city" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="barangay">
+                            <small class="font-weight-bold">Barangay<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="barangay" id="barangay" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label for="date-of-birth">
+                            <small class="font-weight-bold">Date of Birth<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="date" name="date-of-birth" id="date-of-birth" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="age">
+                            <small class="font-weight-bold">Age</small>
+                        </label>
+                        <input class="form-control" type="number" name="age" id="age" placeholder="Age" disabled>
+                    </div>
+                    <div class="col-4">
+                        <label for="pob-province">
+                            <small class="font-weight-bold">Place of Birth (Province)<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="pob-province" id="pob-province" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="pob-municipality-town-city">
+                            <small class="font-weight-bold">Municipality/Town/City<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="pob-municipality-town-city" id="pob-municipality-town-city" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label for="civil-status">
+                            <small class="font-weight-bold">Civil Status<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="civil-status" id="civil-status" required>
+                            <option>Select answer</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="gender">
+                            <small class="font-weight-bold">Gender<span class="text-danger"> *</span> (based on NSO copy of birth certificate)</small>
+                        </label>
+                        <select class="custom-select" name="gender" id="gender" required>
+                            <option>Select answer</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-3 offset-1">
+                        <label for="ethnic-group">
+                            <small class="font-weight-bold">Ethnic Group<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="ethnic-group" id="ethnic-group" required>
+                            <option>Select one</option>
+                            <option value="yes">Doon</option>
+                            <option value="no">Dyan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label for="citizenship-nationality">
+                            <small class="font-weight-bold">Citizenship/Nationality<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="citizenship-nationality" id="citizenship-nationality" required>
+                            <option value="filipino">Filipino</option>
+                            <option value="martian">Martian</option>
+                            <option value="namekian">Namekian</option>
+                            <option value="saiyan">Saiyan</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="mobile-number">
+                            <small class="font-weight-bold">Mobile Number<span class="text-danger"> *</span> (This will be used in receiving messages on application status, examination results, and other NCAT updates.)</small>
+                        </label>
+                        <input style="width: 50%;" class="form-control" type="number" name="mobile-number" id="mobile-number">
+                    </div>
+                </div>
+
+                <h6 class="text-danger font-weight-bolder py-1"><i class="fas fa-users"></i> Family Background</h6>
+
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="father">
+                            <small class="font-weight-bold">Father<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="father" id="father" required>
+                            <option>Select answer</option>
+                            <option value="martian">Martian</option>
+                            <option value="namekian">Namekian</option>
+                            <option value="saiyan">Saiyan</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="fathers-fullname">
+                            <small class="font-weight-bold">Father's Fullname<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="text" name="fathers-fullname" id="fathers-fullname" placeholder="Name of Father" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="fathers-occupation">
+                            <small class="font-weight-bold">Father's Occupation<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="text" name="fathers-occupation" id="fathers-occupation" placeholder="Occupation of Father" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="fathers-educattional-attainment">
+                            <small class="font-weight-bold">Father's Educational Attainment<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="fathers-educattional-attainment" id="fathers-educattional-attainment" required>
+                            <option>Choose one</option>
+                            <option value="black-belter">Black belter</option>
+                            <option value="red-belter">Red belter</option>
+                            <option value="white-belter">White belter</option>
+                        </select>
+                    </div>                    
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="mother">
+                            <small class="font-weight-bold">Mother<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="mother" id="mother" required>
+                            <option>Select answer</option>
+                            <option value="martian">Martian</option>
+                            <option value="namekian">Namekian</option>
+                            <option value="saiyan">Saiyan</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="mothers-fullname">
+                            <small class="font-weight-bold">Mother's Fullname<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="text" name="mothers-fullname" id="mothers-fullname" placeholder="Name of Mother" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="mothers-occupation">
+                            <small class="font-weight-bolder">Mother's Occupation<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="text" name="mothers-occupation" id="mothers-occupation" placeholder="Occupation of Mother" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="mothers-educattional-attainment">
+                            <small class="font-weight-bolder">Mother's Educational Attainment<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="custom-select" name="mothers-educattional-attainment" id="mothers-educattional-attainment" required>
+                            <option>Choose one</option>
+                            <option value="black-belter">Black belter</option>
+                            <option value="red-belter">Red belter</option>
+                            <option value="white-belter">White belter</option>
+                        </select>
+                    </div>                    
+                </div>
+                
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label for="gross-income">
+                            <small class="font-weight-bolder">Total Parent's Monthly Gross Income<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="gross-income" id="gross-income" required>
+                            <option>Select answer</option>
+                            <option value="5,000">5,000 and below</option>
+                            <option value="10,000-20,000">10,000-20,000</option>
+                            <option value="20,000-40,000">20,000-40,000</option>
+                            <option value="40,000+">40,000+</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="siblings">
+                            <small class="font-weight-bold">No. of Siblings in the Family<span class="text-danger"> *</span></small>
+                        </label>
+                        <input class="form-control" type="number" name="siblings" id="siblings" placeholder="Number of siblings in the family" required>
+                    </div>
+                </div>
+
+                <h6 class="text-danger font-weight-bolder py-1"><i class="fas fa-bookmark"></i> Application Status</h6>
+                
+                <div class="form-group row">
+                    <div class="col-7 row">
+                        <label for="type-of-examinee" class="col-6">
+                            <small class="font-weight-bold">What type of Examinee are you?<span class="text-danger"> *</span></small>
+                        </label>
+                        <select class="offset-1 custom-select col" name="type-of-examinee" id="type-of-examinee" required>
+                            <option>Select answer</option>
+                            <option value="nag-review">Nag-review</option>
+                            <option value="mangongopya">mangongopya</option>
+                            <option value="magpupugto">magpupugto</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="track">
+                            <small class="font-weight-bolder">TRACK<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="track" id="track" disabled>
+                            <option>Choose one</option>
+                            <option value="dump-truck">Dump truck</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="strand">
+                            <small class="font-weight-bolder">STRAND<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="strand" id="strand" disabled>
+                            <option>Choose one</option>
+                            <option value="buhok">Strand ng buhok</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="first-course">
+                            <small class="font-weight-bolder">First Course Priority/Preference<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="first-course" id="first-course" disabled>
+                            <option>Choose one</option>
+                            <option value="of-course">Of course</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="second-course">
+                            <small class="font-weight-bolder">Second Course Priority/Preference<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="second-course" id="second-course" disabled>
+                            <option>Choose one</option>
+                            <option value="of-course-not">Of course not</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="third-course">
+                            <small class="font-weight-bolder">Third Course Priority/Preference<span class="text-danger"> *</span></small>
+                        </label>                        
+                        <select class="custom-select" name="third-course" id="third-course" disabled>
+                            <option>Choose one</option>
+                            <option value="course-po-kita">Course po kita</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container bg-white d-flex flex-column align-items-center text-secondary mt-5">                    
+                    <small class="text-secondary text-center">Do you agree to submit to us your personal, filial, and educational information, and are aware that we will use these information only for NVSU CAT's purposes? Also, be sure that once you submit this Application Form, you will not be able to make do any change, or remove any information. You confirm to be submitting only thruthful information, otherwise, your Application might be canceled and you will not be able to be admitted for the NVSU College Admission Test for this SY 2020-2021.</small>
+                    <div class="form-check m-3">
+                        <label for="agree" class="form-check-label">
+                            <small>
+                                <input type="checkbox" class="form-check-input" name="agree" value="agree">Yes, I Agree / Understand
+                            </small>
+                        </label>
+                    </div>                    
+                    <button type="submit" class="btn-sm btn-success text-white"><i class="fab fa-telegram-plane"></i> Submit Application</button>                    
+                </div>
+            </form>
+        </div>
+
+        
+        <div class="footer container-fluid bg-dark text-secondary p-2 mt-4">
+            <div class="container d-flex justify-content-between">
+                <small class="font-weight-bold">NVSU - Bayombong Campuse &copy; 2021 - 2022</small>
+                <small class="font-weight-bold">All Rights Reserved</small>
+            </div>
+        </div>
+        
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>        
+    </body>
+</html>
